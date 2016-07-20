@@ -14,7 +14,12 @@ html(lang="ja")
     link(rel='stylesheet', href='styles/main.css', media='all')
     // endbuild
   body
-    h1 Hello Github Pages
+    .score
+      #js-score-area.score__area
+        | Your Score:&nbsp;
+        span#js-score-text.score__text 0.0
+      #js-score-board
+      #js-score-btn.score__btn START
 
     // build:js scripts/main.js
     script(src='scripts/main.js')
